@@ -46,7 +46,7 @@ if (num1>num2)
 
   З №6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 4 -> да
-*/
+
 Console.WriteLine("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number % 2==0)
@@ -58,4 +58,22 @@ else
    Console.WriteLine("Это нечетное число"); 
 }
 
+8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+*/
 
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int start = 1;
+while (start<=number)
+    if (start%2==0)
+    {
+    Console.Write(start+", ");
+    start++;
+    }
+
+    else if (start%2==1)
+{
+    start++;
+}
+
+    
